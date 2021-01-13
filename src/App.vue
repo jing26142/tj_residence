@@ -20,17 +20,14 @@
 
 
 <script>
-
 </script>
 
 <style>
-
 @media screen and (max-width: 601px){
   template.div#nav-container.logo{
     display: hidden;
   }
 }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   /* -webkit-font-smoothing: antialiased; */
@@ -38,33 +35,25 @@
   text-align: center;
   color: #2c3e50;
 }
-
-
 .logo{
   width: 250px;
 }
-
 #nav-container{
     background: #fff;
     margin: auto;
 }
-
 #nav-container:after {
   content: "";
   display: block;
   clear: both;
 }
-
 #nav {
   padding: 30px;
   font-size: 20px;
 }
-
-
 .nav-top {
   float:right;
 }
-
 .nav_logo {
   float:left;
   padding: 10px;
@@ -75,19 +64,14 @@
   text-decoration: none;
   font-size: 90%;
 }
-
 #nav a:hover {
   color: #2c3e50;
 }
-
 #nav a.router-link-exact-active {
   color: #2c3e50;
   background: rgb(255, 255, 255);
 }
-
-
 body {
   margin: 0
 }
-
 </style>

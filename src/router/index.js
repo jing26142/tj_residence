@@ -31,19 +31,10 @@ const routes = [
     name: 'Gallery',
     component: Gallery,
   },
-  // redirect
-  {
-    path: '/all-galleries',
-    redirect: '/jobs'
-  },
-  {
-    path: '/:catchAll(.*)',
-    redirect: '/'
-  }
 ]
 
 const router = createRouter({
-  hash: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
