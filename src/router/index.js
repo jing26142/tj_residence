@@ -43,7 +43,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  hash: createWebHashHistory(process.env.BASE_URL),
+  hash: createWebHistory(process.env.BASE_URL),
   routes
 })
 
