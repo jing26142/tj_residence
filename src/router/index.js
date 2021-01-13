@@ -31,6 +31,15 @@ const routes = [
     name: 'Gallery',
     component: Gallery,
   },
+  // redirect
+  {
+    path: '/all-galleries',
+    redirect: '/jobs'
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/'
+  }
 ]
 
 const router = createRouter({
