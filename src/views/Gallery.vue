@@ -1,17 +1,49 @@
 <template>
-  <h1>Gallery</h1>
+<div>
   <div v-if="showImg">
     <ShowImg :selectImage="selectImage" @close="toggleImg('')">
     </ShowImg>
   </div>
+  <div v-if="!showImg" >
+    <header>
+      <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="nav_logo" href="./index.html" title="">
+              <img src="../../public/nav/tj-logo.jpg" class="logo">
+            </a>
+          </div>
 
-  <div class="gall-wrapper">
-    <div v-for="image in images" :key="image">
-      <div class="gall-img-block">
-        <img @click="toggleImg(image)" class="gall-img" :src="getImgUrl(image)">
+          <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./" title="" class="active">Home</a></li>
+              <li><a href="./accomodations" title=""> Accomodations</a></li>
+              <li><a href="./facilities" title=""> Facilities </a></li>
+              <li><a href="./gallery" title=""> Gallery </a></li>
+              <li><a href="./contact" title="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+    <h1>Gallery</h1>
+
+
+    <div class="gall-wrapper">
+      <div v-for="image in images" :key="image">
+        <div class="gall-img-block">
+          <img @click="toggleImg(image)" class="gall-img" :src="getImgUrl(image)">
+        </div>
       </div>
     </div>
-  </div>
+</div>
 
 </template>
 
@@ -79,11 +111,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .gall-wrapper{
   background: grey;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .gall-img{
@@ -91,7 +123,7 @@ export default {
 }
 .gall-img-block{
   float: left;
-  width: 29%;
+  width: 31%;
   margin: 1%;
   padding: 1%;
   background: #eee;

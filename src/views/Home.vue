@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app1">
     <ImageSlider/>
   </div>
   <div class="home_desc">
@@ -21,11 +21,96 @@
       02-954-6110. We look forward to serving you soon!
     </p>
   </div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="nav_logo" href="./index.html" title="">
+          <img src="../../public/nav/tj-logo.jpg" class="logo">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./" title="" class="active">Home</a></li>
+          <li><a href="./accomodations" title=""> Accomodations</a></li>
+          <li><a href="./facilities" title=""> Facilities </a></li>
+          <li><a href="./gallery" title=""> Gallery </a></li>
+          <li><a href="./contact" title="">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <h4>TJ Residence</h4>
+                        <p>31/112 Chinnakhet 2/16 Alley, Thung Song Hong, Lak Si, Bangkok 10210</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Contact Us:</h4>
+                        <p>Tel: 02-954-6110
+                          <br>
+                          <a href="https://www.facebook.com/tjresidence" class="social-round-icon white-round-icon fa-icon" title="">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+-->
+
+</body>
+
+</html>
 </template>
 
 <script>
 // @ is an alias to /src
 import ImageSlider from '@/components/ImageSlider.vue'
+import mainscript from './main.41beeca9.js'
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
 
 export default {
   name: 'Home',
@@ -37,6 +122,8 @@ export default {
 
 
 <style scoped>
+@import './main.a3f694c0.css';
+
 .home_title {
   font-family: Times;
 }
@@ -48,7 +135,10 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
+.nav_logo {
+  float:left;
+  margin-top: 15px;
+}
 
 .home_desc{
   margin-left: 10%;

@@ -2,35 +2,35 @@
 
     <div class="container">
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[0])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[1])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[2])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[3])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[4])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[5])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[6])" class="responsive">
         </div>
         
-        <div class="slide-container fade">
+        <div class="slide-container fade1">
             <img :src="getImgUrl(images[7])" class="responsive">
         </div>
 
@@ -192,19 +192,19 @@ body{
     background-color: grey;
   }
   
-  .fade{
-    animation-name: fade;
+  .fade1{
+    animation-name: fade1;
     animation-duration: 1s;
   }
   
-  @keyframes fade{
+  @keyframes fade1{
     from{opacity: 0;}
     to{opacity: 1;}
   }  
 
 .responsive {
     width: 100%;
-    transition: 0.5s;
+    transition: 0;
 }
 
 @media (min-width:2000px) {
