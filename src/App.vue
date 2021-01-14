@@ -6,7 +6,7 @@
         <router-link to="/gallery" class="nav-text">Gallery</router-link> |
         <router-link to="/contact" class="nav-text">Contact Us</router-link> 
       </div> -->
-    <!-- <header>
+    <!-- <header> -->
       <nav class="navbar  navbar-fixed-top navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -16,12 +16,21 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="nav_logo" href="./index.html" title="">
+            <router-link to="/" class="nav_logo">
               <img src="../public/nav/tj-logo.jpg" class="logo">
-            </a>
+            </router-link>
           </div>
 
           <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+            <ul class="nav navbar-nav navbar-right">
+            <li><router-link to="/" title="" class="active">Home</router-link></li>
+            <li><router-link to="/accomodations" class="nav-text">Accomodations</router-link></li>
+            <li><router-link to="/facilities" class="nav-text">Facilities</router-link></li>
+            <li><router-link to="/gallery" class="nav-text">Gallery</router-link></li>
+            <li><router-link to="/contact" class="nav-text">Contact Us</router-link> </li>
+            </ul>
+          </div>
+          <!-- <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
             <ul class="nav navbar-nav navbar-right">
             <li><a href="./" title="" class="active">Home</a></li>
             <li><a href="./accomodations" title=""> Accomodations</a></li>
@@ -29,10 +38,10 @@
             <li><a href="./gallery" title=""> Gallery </a></li>
             <li><a href="./contact" title="">Contact Us</a></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </nav>
-    </header> -->
+    <!-- </header> -->
   
   <router-view/>
 

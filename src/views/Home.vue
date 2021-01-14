@@ -59,30 +59,6 @@
 
 
 
-<footer>
-    <div class="section-container footer-container">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-4">
-                        <h4>TJ Residence</h4>
-                        <p>31/112 Chinnakhet 2/16 Alley, Thung Song Hong, Lak Si, Bangkok 10210</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>Contact Us:</h4>
-                        <p>Tel: 02-954-6110
-                          <br>
-                          <a href="https://www.facebook.com/tjresidence" class="social-round-icon white-round-icon fa-icon" title="">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                          </a>
-                        </p>
-                    </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>

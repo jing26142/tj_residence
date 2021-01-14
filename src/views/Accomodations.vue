@@ -1,32 +1,5 @@
 
 <template>
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="nav_logo" href="./index.html" title="">
-          <img src="../../public/nav/tj-logo.jpg" class="logo">
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="./" title="" class="">Home</a></li>
-          <li><a href="./accomodations" title="" class="active"> Accomodations</a></li>
-          <li><a href="./facilities" title=""> Facilities </a></li>
-          <li><a href="./gallery" title=""> Gallery </a></li>
-          <li><a href="./contact" title="">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <!DOCTYPE html>
 <html lang="en">
