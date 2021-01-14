@@ -94,7 +94,9 @@ export default {
       for (i = 0; i<slides.length; i++){
         slides[i].style.display = "none";
       };
-      slides[this.slideIndex-1].style.display = "block";
+      if (slides.length !== 0){
+              slides[this.slideIndex-1].style.display = "block";
+      }
     },
 
     startSlide: function () {
