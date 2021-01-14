@@ -4,7 +4,7 @@ module.exports = {
       host : '0.0.0.0',
       port: 8080,
     },
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/tj_residence/'
-      : '/'
+    // publicPath: process.env.NODE_ENV === 'production'
+    //   ? '/tj_residence/'
+    //   : '/'
   }
